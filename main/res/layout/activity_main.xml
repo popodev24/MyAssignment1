@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_4" />
+
+    <EditText
+        android:id="@+id/editTextTimeOfDay"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGetSuggestion"
+        android:layout_width="367dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="89dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/audiowide"
+        android:text="Submit"
+        android:textColor="#E2F1F8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeOfDay" />
+
+    <TextView
+        android:id="@+id/textViewSuggestion"
+        android:layout_width="305dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center|top"
+        android:textColor="#D1180D"
+        android:textSize="31sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetSuggestion" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="337dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="@font/audiowide"
+        android:text="Reset"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuggestion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
